@@ -1,0 +1,14 @@
+pysetup() {
+    if [ ! -f requirements.txt ]; then
+        echo "requirements.txt not found in current directory."
+        return 1
+    fi
+
+    if [ ! -d venv ]; then
+        python3 -m venv venv
+    fi
+
+    source venv/bin/activate
+    pip install --upgrade pip
+    pip install -r requirements.txt
+}
