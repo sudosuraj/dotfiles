@@ -1,2 +1,2 @@
 # dotfiles
-A Hacker's Minimal Config Files 
+My Minimal Terminal Config Files 
